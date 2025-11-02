@@ -1,0 +1,11 @@
+{
+  "name": "Save to GoodLinks",
+  "identifier": "com.popclip.extension.savetogoodlinks",
+  "description": "Save URLs to GoodLinks app",
+  "icon": "iconify:mdi:bookmark-plus",
+  "action": {
+    "title": "GoodLinks",
+    "requirements": ["url"],
+    "url": "goodlinks://x-callback-url/save?url={popclip text}&quick=1"
+  }
+}
