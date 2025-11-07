@@ -1,0 +1,15 @@
+{
+  "name": "Jira Quick Open",
+  "identifier": "com.skbroadband.jira-quick-open",
+  "description": "Open Jira tickets directly from selected text",
+  "popclipVersion": 4586,
+  "actions": [
+    {
+      "title": "Open in Jira",
+      "icon": "symbol:link.circle.fill",
+      "requirements": ["text"],
+      "regex": "^(BTVSKCC|BTVO|BPM|BTVDB|BTVVPN|TESTBED)-\\d+$",
+      "url": "https://jira.skbroadband.com/browse/***"
+    }
+  ]
+}
