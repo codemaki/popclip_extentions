@@ -8,8 +8,8 @@
       "title": "Open in Jira",
       "icon": "symbol:link.circle.fill",
       "requirements": ["text"],
-      "regex": "^(BTVSKCC|BTVO|BPM|BTVDB|BTVVPN|TESTBED)-\\d+$",
-      "url": "https://jira.skbroadband.com/browse/***"
+      "regex": "(BTVSKCC|BTVO|BPM|BTVDB|BTVVPN|TESTBED)-\\d+",
+      "javascript": "const text = (popclip.input.matchedText || popclip.input.text).trim(); const clean = text.replace(/^\\[\\[/, '').replace(/\\]\\]$/, ''); popclip.openUrl('https://jira.skbroadband.com/browse/' + clean);"
     }
   ]
 }
